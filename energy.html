@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Decimal to Binary Converter</title>
+	<link rel="stylesheet" href="energy.css">
+</head>
+<body>
+	<main class="wrap">
+		<h1>Energys Decimal → Binary Converter</h1>
+
+		<form id="converter" onsubmit="return false;" aria-label="Decimal to binary converter">
+			<label for="decimalInput">Enter decimal number</label>
+			<input id="decimalInput" name="decimal" inputmode="decimal" placeholder="e.g. 12.625 or -3.2" autocomplete="off">
+
+			<div class="controls">
+				<button id="convertBtn" type="button">Convert</button>
+				<button id="clearBtn" type="button" class="secondary">Clear</button>
+			</div>
+
+
+
+			<div class="result-group">
+				<label for="binaryOutput">Binary result</label>
+				<textarea id="binaryOutput" readonly rows="3"></textarea>
+				<div class="result-actions">
+					<button id="copyBtn" type="button">Copy</button>
+					<button id="downloadBtn" type="button" class="secondary">Download .txt</button>
+				</div>
+			</div>
+		</form>
+
+
+	</main>
+
+	<script src="script.js" defer></script>
+</body>
+</html>
+
